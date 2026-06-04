@@ -16,10 +16,10 @@ export function Header() {
   }, []);
 
   return (
-    <header className={`fixed left-0 right-0 top-0 z-30 px-4 py-4 sm:px-6 lg:px-12 transition-all duration-500 ${scrolled || menuOpen ? "bg-[#f4eddf]/95 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
+    <header className={`fixed left-0 right-0 top-0 z-30 px-4 py-4 sm:px-6 lg:px-12 transition-all duration-500 ${scrolled || menuOpen ? "bg-[#f4eddf]/90 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/Images/Logo.webp" alt="Amethiya Logo" width={48} height={48} className="rounded-full" />
+          <Image src="/Images/Black Logo.png" alt="Amethiya Logo" width={64} height={64} className="rounded-full mix-blend-multiply" />
           <span>
             <span className="block text-xs font-black uppercase tracking-[0.14em]">Amethiya</span>
             <span className="mt-1 block h-1 w-24 bg-[#c85a21]" />
