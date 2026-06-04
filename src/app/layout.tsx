@@ -3,6 +3,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import SmoothScroll from "./components/SmoothScroll";
 import BackToTop from "./components/BackToTop";
 import Preloader from "./components/Preloader";
+import { PreloaderProvider } from "./components/PreloaderContext";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -37,11 +38,13 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full w-full antialiased`}
     >
       <body className="min-h-full w-full flex flex-col overflow-x-hidden">
-        <Preloader />
-        <SmoothScroll />
-        {children}
-        <WhatsAppButton />
-        <BackToTop />
+        <PreloaderProvider>
+          <Preloader />
+          <SmoothScroll />
+          {children}
+          <WhatsAppButton />
+          <BackToTop />
+        </PreloaderProvider>
       </body>
     </html>
   );

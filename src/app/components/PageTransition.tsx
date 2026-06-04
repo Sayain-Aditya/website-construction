@@ -1,8 +1,22 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { usePreloaderDone } from "./PreloaderContext";
 
 export function PageTransition({ children }: { children: React.ReactNode }) {
+  const preloaderDone = usePreloaderDone();
+  const [firstLoad, setFirstLoad] = useState(true);
+
+  useEffect(() => {
+    if (preloaderDone) setFirstLoad(false);
+  }, [preloaderDone]);
+
+  // On first load: wait until preloader is done before animating
+  if (firstLoad && !preloaderDone) {
+    return <div style={{ opacity: 0 }}>{children}</div>;
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
