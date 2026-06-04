@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --background: #e3d8c2;
+  --foreground: #221d1a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scrollbar-color: #c85a21 #efe5d4;
+  scrollbar-width: thin;
+}
+
+a {
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #efe5d4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c85a21;
+  border: 2px solid #efe5d4;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #211e1c;
+}
+
+.paint-stroke {
+  background:
+    radial-gradient(ellipse at 65% 45%, rgb(255 255 255 / 0.65), transparent 58%),
+    conic-gradient(from 22deg, transparent 0 18deg, rgb(255 255 255 / 0.8) 18deg 36deg, transparent 36deg 55deg);
+  filter: blur(1px);
+  transform: rotate(-8deg);
+}
+
+.footer-shape {
+  position: absolute;
+  bottom: -1px;
+  height: 72px;
+  width: 34%;
+  background: #171412;
+  clip-path: polygon(0 100%, 0 35%, 8% 58%, 18% 18%, 26% 52%, 38% 10%, 48% 44%, 62% 18%, 75% 58%, 100% 22%, 100% 100%);
+}
+
+.brush-mark {
+  background:
+    radial-gradient(ellipse at 58% 48%, rgb(255 255 255 / 0.82), transparent 59%),
+    conic-gradient(from 18deg, transparent 0 12deg, rgb(255 255 255 / 0.72) 12deg 24deg, transparent 24deg 38deg, rgb(255 255 255 / 0.55) 38deg 48deg, transparent 48deg 60deg);
+  filter: blur(1px);
+  transform: rotate(-7deg);
+}
+
+.dark-brush {
+  background:
+    radial-gradient(ellipse at 30% 55%, rgb(255 255 255 / 0.06), transparent 60%),
+    conic-gradient(from 26deg, transparent 0 18deg, rgb(255 255 255 / 0.05) 18deg 30deg, transparent 30deg 44deg);
+  transform: rotate(-10deg);
+}
