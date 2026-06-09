@@ -60,10 +60,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-12 sm:max-w-xl sm:gap-4">
-            <Stat value="25K+" label="Clients" />
-            <Stat value="Wide" label="Services" />
-          </div>
+
         </Reveal>
       </section>
 
