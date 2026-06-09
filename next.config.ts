@@ -1,14 +1,13 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
+const nextConfig = {
+  async redirects() {
+    return [
       {
-        protocol: "https",
-        hostname: "images.unsplash.com",
+        source: '/contact-us',
+        destination: '/',
+        permanent: true,
       },
-    ],
+    ]
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig
