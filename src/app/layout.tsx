@@ -25,6 +25,9 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Amethiya Construction & Developer",
   description: "Construction, development, Vastu planning, design, estimation, plotting, and turnkey project execution in Gorakhpur.",
+  verification: {
+    google: "G8MOx2qmD6ItZIr0TNoIOMyVu5-U7Xrk0GTEvVW6D_w",
+  },
 };
 
 export default function RootLayout({
