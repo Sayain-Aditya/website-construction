@@ -8,10 +8,9 @@ import { brand, images, projects, services } from "./site-data";
 import InfiniteScroll from "./components/InfiniteScroll";
 import Testimonials from "./components/Testimonials";
 
-function Stat({ value, label, icon }: { value: string; label: string; icon?: string }) {
+function Stat({ value, label }: { value: string; label: string }) {
   return (
-    <div className="border-l-2 border-[#c85a21] bg-[#fff8ee] p-4 sm:p-5">
-      {icon && <div className="text-lg mb-1">{icon}</div>}
+    <div className="bg-[#fff8ee] p-4 sm:p-5">
       <div className="text-2xl sm:text-3xl font-black text-[#d86120]">{value}</div>
       <div className="mt-1 text-xs font-black uppercase text-[#756b61]">{label}</div>
     </div>
@@ -33,13 +32,7 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative overflow-hidden px-4 pb-16 pt-24 sm:px-6 sm:pt-28 lg:px-12 lg:pt-36 lg:pb-20">
-
-        {/* Background decorative elements */}
         <div className="brush-mark absolute right-0 top-0 h-[520px] w-[660px]" />
-        <div className="absolute left-0 top-0 h-full w-full bg-[radial-gradient(ellipse_at_top_left,_#c85a2108_0%,_transparent_60%)]" />
-        <div className="absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-[#c85a21]/30 to-transparent" />
-
-        {/* Video right side */}
         <div className="absolute right-0 top-32 h-[450px] w-[60%] overflow-hidden hidden lg:block">
           <video className="h-full w-full object-contain object-center mix-blend-multiply" autoPlay muted loop playsInline aria-label="Construction motion preview">
             <source src="/motion3.mp4" type="video/mp4" />
@@ -50,52 +43,28 @@ export default function Home() {
 
         <Reveal className="relative z-10 mx-auto max-w-7xl">
           <div className="max-w-2xl">
-
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#c85a21]/30 bg-[#c85a21]/10 px-4 py-1.5 text-xs font-black uppercase tracking-widest text-[#c85a21]">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#c85a21] animate-pulse" />
-              Gorakhpur&apos;s Trusted Builder
-            </div>
-
-            {/* Heading with accent */}
-            <div className="mt-4 flex items-start gap-4">
-              <div className="mt-2 hidden h-16 w-1 shrink-0 bg-[#c85a21] sm:block" />
-              <h1 className="text-3xl font-black uppercase leading-tight text-[#bd4f1f] sm:text-4xl md:text-5xl lg:text-7xl">
-                Your Trusted Partner for Construction & Development
-              </h1>
-            </div>
-
-            <p className="mt-4 text-base font-medium leading-7 text-[#514941] sm:mt-6 sm:text-lg sm:leading-8">
-              Building dreams with precision, passion, and trust — from planning to final delivery.
+            <Label>Construction & Development</Label>
+            <h1 className="mt-4 text-3xl font-black uppercase leading-tight text-[#bd4f1f] sm:text-4xl md:text-5xl lg:text-7xl">
+              Your Trusted Partner for Construction & Development
+            </h1>
+            <p className="mt-4 text-base font-bold leading-7 text-[#514941] sm:mt-6 sm:text-lg sm:leading-8">
+              Your Trusted Partner in Building Dreams!
             </p>
-
-            {/* CTA Buttons */}
-            <div className="mt-6 flex flex-wrap gap-3 sm:mt-8">
-              <Link href="/services" className="group inline-flex items-center gap-2 rounded-full bg-[#171412] px-5 py-3 text-xs font-black text-white transition-all hover:bg-[#c85a21] sm:px-6 sm:py-4">
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link href="/services" className="rounded-full bg-[#171412] px-5 py-3 text-xs font-black text-white sm:px-6 sm:py-4">
                 View Services
-                <span className="transition-transform group-hover:translate-x-1">→</span>
               </Link>
-              <Link href="/contact" className="group inline-flex items-center gap-2 rounded-full bg-[#c85a21] px-5 py-3 text-xs font-black text-white transition-all hover:bg-[#a84819] sm:px-6 sm:py-4">
+              <Link href="/contact" className="rounded-full bg-[#c85a21] px-5 py-3 text-xs font-black text-white sm:px-6 sm:py-4">
                 Contact Us
-                <span className="transition-transform group-hover:translate-x-1">→</span>
               </Link>
             </div>
           </div>
 
-          {/* Stats */}
-          <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-14 sm:max-w-xl sm:gap-4">
-            <Stat value="25K+" label="Clients" icon="👷" />
-            <Stat value="Wide" label="Services" icon="🏗️" />
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-12 sm:max-w-xl sm:gap-4">
+            <Stat value="25K+" label="Clients" />
+            <Stat value="Wide" label="Services" />
           </div>
         </Reveal>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden flex-col items-center gap-1 lg:flex animate-bounce">
-          <span className="text-xs font-black uppercase tracking-widest text-[#c85a21]/60">Scroll</span>
-          <svg className="h-4 w-4 text-[#c85a21]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
       </section>
 
       {/* About */}
