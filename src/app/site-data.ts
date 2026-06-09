@@ -20,9 +20,10 @@ export const images = {
   hero: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=90",
   about: "/About.jpeg",
   team: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=85",
-  projectOne: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85",
-  projectTwo: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85",
-  projectThree: "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=900&q=85",
+  projectOne: "/Images/Residental villasw.webp",
+  projectTwo: "/Images/Commercial Complexes.webp",
+  projectThree: "/Images/Plot Developments.webp",
+  projectFour: "/Images/Custom Interiors.webp",
 };
 
 export const services = [

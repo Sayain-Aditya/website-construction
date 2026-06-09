@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   verification: {
     google: "G8MOx2qmD6ItZIr0TNoIOMyVu5-U7Xrk0GTEvVW6D_w",
   },
+  icons: {
+    icon: '/Logo.webp',
+  },
 };
 
 export default function RootLayout({

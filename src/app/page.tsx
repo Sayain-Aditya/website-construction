@@ -175,7 +175,7 @@ export default function Home() {
             {projects.map((project, index) => (
               <article key={project} className="bg-[#fff8ee]">
                 <Photo
-                  src={[images.projectOne, images.projectTwo, images.projectThree, images.team][index]}
+                  src={[images.projectOne, images.projectTwo, images.projectThree, images.projectFour][index]}
                   alt={project}
                   className="aspect-square w-full sm:aspect-[1.1]"
                 />
