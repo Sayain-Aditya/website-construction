@@ -31,16 +31,16 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://amethiyaconstruction.com'),
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any', type: 'image/x-icon' },
-      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/icon.png', type: 'image/png', sizes: 'any' },
+      { url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
     ],
-    shortcut: '/favicon.ico',
-    apple: { url: '/favicon.ico', sizes: '180x180' },
+    shortcut: '/icon.png',
+    apple: { url: '/icon.png', sizes: '180x180', type: 'image/png' },
   },
   openGraph: {
     title: 'Amethiya Construction & Developer',
     description: 'Construction, development, Vastu planning, design, estimation, plotting, and turnkey project execution in Gorakhpur.',
-    images: [{ url: '/Logo.webp', width: 512, height: 512, alt: 'Amethiya Construction Logo' }],
+    images: [{ url: '/icon.png', width: 512, height: 512, alt: 'Amethiya Construction Logo' }],
     type: 'website',
   },
 };
