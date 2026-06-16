@@ -47,8 +47,8 @@ export default function AboutPage() {
       <section className="px-4 pb-12 sm:px-6 sm:pb-16 lg:px-12">
         <Reveal className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10">
           <div className="order-2 lg:order-1 group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl sm:aspect-[1.2]">
-            <Image src={images.about} alt="About Amethiya Construction" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-opacity duration-700 ease-in-out group-hover:opacity-0" />
-            <Image src="/Images/1.webp" alt="About Amethiya Construction 2" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-0 transition-opacity duration-700 ease-in-out group-hover:opacity-100" />
+            <Image src={images.about} alt="About Amethiya Construction" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-0 transition-opacity duration-700 ease-in-out group-hover:opacity-100"  />
+            <Image src="/Images/PROFILE PIC.jpg" alt="About Amethiya Construction 2" fill sizes="(max-width: 768px)  100vw, 50vw"  className="object-contain transition-opacity duration-700 ease-in-out group-hover:opacity-0" />
           </div>
           <div className="order-1 lg:order-2">
             <Label>About Us</Label>

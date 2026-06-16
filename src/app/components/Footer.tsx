@@ -35,8 +35,11 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 pt-5 text-xs text-[#8f8173] text-center sm:text-left">
-        Copyright 2026 Amethiya Construction & Developer. All rights reserved.
+      <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 pt-5 text-xs text-[#8f8173]">
+        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+          <span>© 2026 Amethiya Construction &amp; Developer. All rights reserved.</span>
+          <span>Developed by <span className="text-[#ff6a18] font-bold">Aditya Singh</span></span>
+        </div>
       </div>
     </footer>
   );
